@@ -1,0 +1,6 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Josefin Sans', sans-serif;
+  --font-lato: 'Lato', sans-serif;
+}
