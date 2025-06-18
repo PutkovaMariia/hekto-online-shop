@@ -6,7 +6,7 @@ export default function TextIcon({ text, icon, position, className }: TextIconPr
       <span
         className={`size-4 mask mask-no-repeat mask-center mask-contain ${className}`}
         style={{
-          maskImage: `url('/assets/icons/${icon}.svg')`
+          maskImage: `url('assets/icons/${icon}.svg')`
         }}
       ></span>
       {text}

@@ -17,8 +17,8 @@ export default function LayoutSwitcher({ currentVariant, onChange }: LayoutSwitc
         <span
           className="w-4 h-4 inline-block bg-current mask mask-no-repeat mask-center mask-contain"
           style={{
-            maskImage: "url('/assets/icons/view-grid.svg')",
-            WebkitMaskImage: "url('/assets/icons/view-grid.svg')"
+            maskImage: "url('assets/icons/view-grid.svg')",
+            WebkitMaskImage: "url('assets/icons/view-grid.svg')"
           }}
         ></span>
       </button>
@@ -29,8 +29,8 @@ export default function LayoutSwitcher({ currentVariant, onChange }: LayoutSwitc
         <span
           className="w-4 h-4 inline-block bg-current mask mask-no-repeat mask-center mask-contain"
           style={{
-            maskImage: "url('/assets/icons/view-list.svg')",
-            WebkitMaskImage: "url('/assets/icons/view-list.svg')"
+            maskImage: "url('assets/icons/view-list.svg')",
+            WebkitMaskImage: "url('assets/icons/view-list.svg')"
           }}
         ></span>
       </button>

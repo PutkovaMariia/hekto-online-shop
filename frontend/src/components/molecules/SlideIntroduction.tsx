@@ -37,7 +37,7 @@ export default function SlideIntroduction() {
             <div
               className="absolute top-10 right-5 bg-info z-30"
               style={{
-                maskImage: "url('/assets/icons/sale-badge.svg')",
+                maskImage: "url('assets/icons/sale-badge.svg')",
                 maskRepeat: 'no-repeat',
                 maskPosition: 'center',
                 maskSize: 'contain',

@@ -11,8 +11,8 @@ const baseClasses =
 
 export default function ButtonIcon({ icon, to, ...rest }: ButtonIconProps) {
   const iconStyles = {
-    maskImage: `url('/assets/icons/${icon}.svg')`,
-    WebkitMaskImage: `url('/assets/icons/${icon}.svg')`
+    maskImage: `url('assets/icons/${icon}.svg')`,
+    WebkitMaskImage: `url('assets/icons/${icon}.svg')`
   };
   const iconClasses = `size-4 bg-tertiary mask mask-no-repeat mask-center mask-contain`;
 

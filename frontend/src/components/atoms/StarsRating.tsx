@@ -1,3 +1,6 @@
+import starActiveUrl   from '/assets/icons/star-active.svg'
+import starInactiveUrl from '/assets/icons/star.svg'
+
 const TOTAL_STARS = 5;
 
 interface StarsRatingProps {
@@ -13,7 +16,7 @@ export default function StarsRating({ rating }: StarsRatingProps) {
       {Array.from({ length: activeStars }).map((_, idx) => (
         <img
           key={`active-${idx}`}
-          src="/assets/icons/star-active.svg"
+          src={starActiveUrl}
           alt="Active star"
           className="w-4 h-4"
         />
@@ -21,7 +24,7 @@ export default function StarsRating({ rating }: StarsRatingProps) {
       {Array.from({ length: inactiveStars }).map((_, idx) => (
         <img
           key={`inactive-${idx}`}
-          src="/assets/icons/star.svg"
+          src={starInactiveUrl}
           alt="Inactive star"
           className="w-4 h-4"
         />
