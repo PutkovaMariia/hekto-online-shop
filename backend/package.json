@@ -2,7 +2,7 @@
   "name": "backend",
   "version": "1.0.0",
   "scripts": {
-    "start": "json-server --watch product-data.json --port $PORT"
+    "start": "json-server --watch product-data.json --port $PORT --host 0.0.0.0"
   },
   "devDependencies": {
     "json-server": "0.17.4"
