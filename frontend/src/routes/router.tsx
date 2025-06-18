@@ -5,26 +5,24 @@ import ProductsPage from '../pages/ProductsPage';
 import ProductDetailsPage from '../pages/ProductDetailsPage';
 import CartPage from '../pages/CartPage';
 import ErrorPage from '../pages/ErrorPage';
-import BlogPage from '../pages/BlogPage.tsx';
-import ContactPage from '../pages/ContactPage.tsx';
 
-const router = createBrowserRouter([
-  {
-    path: '/',
-    element: <BasicLayout />,
-    errorElement: <ErrorPage />,
-    children: [
-      { path: '', element: <HomePage /> },
-      { path: 'products', element: <ProductsPage /> },
-      { path: 'product/:id', element: <ProductDetailsPage /> },
-      { path: 'cart', element: <CartPage /> },
-      { path: 'blog', element: <BlogPage /> },
-      { path: 'contact', element: <ContactPage /> }
-    ]
-  }
-],
+const router = createBrowserRouter(
+  [
     {
-      basename: '/hekto-online-shop'
-    });
+      path: '/',
+      element: <BasicLayout />,
+      errorElement: <ErrorPage />,
+      children: [
+        { path: '', element: <HomePage /> },
+        { path: 'products', element: <ProductsPage /> },
+        { path: 'product/:id', element: <ProductDetailsPage /> },
+        { path: 'cart', element: <CartPage /> }
+      ]
+    }
+  ],
+  {
+    basename: '/hekto-online-shop'
+  }
+);
 
 export default router;

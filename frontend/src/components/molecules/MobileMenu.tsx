@@ -1,10 +1,11 @@
 import { useEffect, useRef, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import Dropdown from '../atoms/Dropdown.tsx';
 import { currencies, languages } from '../../const/dropdownOptions.ts';
 import TextIcon from '../atoms/TextIcon.tsx';
 import NavLinks from './NavLinks.tsx';
 import crossImg from '/assets/icons/cross.svg';
+import { navLinks } from '../../const/navLinks.ts';
 
 export default function MobileMenu({
   isMenuOpen,
@@ -68,29 +69,14 @@ export default function MobileMenu({
 
         <div className="flex flex-col gap-8 p-8">
           <div className="flex w-full pb-8" onClick={() => setIsMenuOpen(false)}>
-            <Link to="/cart">
+            <NavLink to={navLinks.cart.to}>
               <TextIcon
                 text="Cart"
                 icon="cart"
                 position="after"
                 className="bg-primary lg:bg-white-bright"
               />
-            </Link>
-          </div>
-
-          <div className="flex items-center justify-between">
-            <TextIcon
-              text="Login"
-              icon="user"
-              position="after"
-              className="bg-primary lg:bg-white-bright"
-            />
-            <TextIcon
-              text="Wishlist"
-              icon="heart"
-              position="after"
-              className="bg-primary lg:bg-white-bright"
-            />
+            </NavLink>
           </div>
 
           <div className="flex items-center justify-between">

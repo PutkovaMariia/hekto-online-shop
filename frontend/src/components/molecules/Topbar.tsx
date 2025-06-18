@@ -1,10 +1,11 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { CONTACT_EMAIL, PHONE_NUMBER } from '../../const/consts.ts';
 import { languages, currencies } from '../../const/dropdownOptions.ts';
 import Dropdown from '../atoms/Dropdown.tsx';
 import TextIcon from '../atoms/TextIcon.tsx';
 import cartImg from '/assets/icons/cart.svg';
+import { navLinks } from '../../const/navLinks.ts';
 
 export default function Topbar() {
   const [selectedLang, setSelectedLang] = useState(languages[0]);
@@ -44,21 +45,9 @@ export default function Topbar() {
           onSelect={setSelectedCurrency}
           variant="top"
         />
-        <TextIcon
-          text="Login"
-          icon="user"
-          position="after"
-          className="bg-primary lg:bg-white-bright"
-        />
-        <TextIcon
-          text="Wishlist"
-          icon="heart"
-          position="after"
-          className="bg-primary lg:bg-white-bright"
-        />
-        <Link to="/cart">
+        <NavLink to={navLinks.cart.to}>
           <img src={cartImg} alt="Cart Icon" className="size-4 cursor-pointer" />
-        </Link>
+        </NavLink>
       </div>
     </div>
   );
