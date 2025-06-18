@@ -14,7 +14,7 @@ export default function SearchInput({ placeholder = 'Search', ...rest }: SearchI
                 {...rest}
             />
             <button className="bg-primary rounded-md w-1/5 absolute right-0.5 inset-y-0.5 flex items-center justify-center hover:cursor-pointer">
-                <span className="size-6 bg-grey-1 mask [mask-image:url('assets/icons/search.svg')]"></span>
+                <span className="size-6 bg-grey-1 mask [mask-image:url('/assets/icons/search.svg')]"></span>
             </button>
         </div>
     );

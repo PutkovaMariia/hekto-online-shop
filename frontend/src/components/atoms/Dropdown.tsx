@@ -56,7 +56,7 @@ export default function Dropdown({
         <span
           className={`flex items-center transition-transform duration-300
                       after:content-[''] after:size-4 ${arrowClasses}
-                      after:mask after:[mask-image:url('assets/icons/chevron-down.svg')]
+                      after:mask after:[mask-image:url('/assets/icons/chevron-down.svg')]
                     ${isOpen ? 'rotate-180' : ''}`}
         ></span>
       </button>
