@@ -22,6 +22,9 @@ const router = createBrowserRouter([
       { path: 'contact', element: <ContactPage /> }
     ]
   }
-]);
+],
+    {
+      basename: '/hekto-online-shop'
+    });
 
 export default router;
