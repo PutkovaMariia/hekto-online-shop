@@ -1,5 +1,6 @@
-export const API_PRODUCTS_URL = 'http://localhost:5000/products?';
-export const API_FILTERS_URL = 'http://localhost:5000/filters?';
+const API_BASE = import.meta.env.VITE_API_BASE
+export const API_PRODUCTS_URL = `${API_BASE}/products?`
+export const API_FILTERS_URL  = `${API_BASE}/filters?`
 export const CONTACT_EMAIL = 'mhhasanul@gmail.com';
 export const PHONE_NUMBER = '(12345)67890';
 export const AUTOPLAY_KEEN_SLIDER_TIMEOUT = 3000;
