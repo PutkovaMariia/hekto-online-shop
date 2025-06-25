@@ -1,7 +1,7 @@
 const API_BASE = import.meta.env.VITE_API_BASE
 export const API_PRODUCTS_URL = `${API_BASE}/products?`
 export const API_FILTERS_URL  = `${API_BASE}/filters?`
-export const CONTACT_EMAIL = 'mhhasanul@gmail.com';
+export const CONTACT_EMAIL = 'mashaputkova@gmail.com';
 export const PHONE_NUMBER = '(12345)67890';
 export const AUTOPLAY_KEEN_SLIDER_TIMEOUT = 3000;
 export const RADIX_TEN_BASED = 10;

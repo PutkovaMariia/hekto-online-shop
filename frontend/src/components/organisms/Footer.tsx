@@ -38,7 +38,7 @@ const FooterData: FooterDataType = {
       links: ['Blog', 'Browse the shop', 'Category', 'Pre-built-pages', 'Visual Composer Elements']
     }
   ],
-  rights: '©Webecy - All Rights Reserved'
+  rights: '©Hekto - All Rights Reserved'
 };
 
 const socialLinks = [
